@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .content{
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <h1>CRUDE Gabow v0.0.1</h1>
+    </div>
+    <div class="container mt-5">
+        <h1>¿Que es Gabow?</h1>
+        <hr>
+        <p>Gabow es mi proyecto aula. El proyecto consiste en crear un asistente que permita
+            agilizar el movimiento de las personas en lugares publicos.
+            Asi mismo, buscamos otorgar una herramienta digital de facil acceso al usuario con el
+            que pueda consultar la distribucion interna de estos establecimientos. Imaginese un centro comercial;
+            Es comun ver que en estos lugares existan mapas que reflejen el piso donde estas, mostrando las tiendas, salidas
+            de emergencia, pasillos etc. 
+        </p>
+        <p>
+            Lo que buscamos es digitalizar estos mapas para no tener que estar buscando
+            estos letreros. Pensamos hacer esto en varios lugares publicos. Veo a gabow como un complemento de Google Maps.
+            Con esto resolvemos la incertidumbre que a muchos nos ha pasado: ¿Seguira estando esta tienda? ¿Donde esta el cine?
+            ¿Estara esta tienda? Todo esto al alcance de tu mano.
+        </p>
+        <br>
+        <h2 class="display-6">Descripcion</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Altas</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="content">
+                            El sistema debera dar de alta los lugares publicos. Es decir, a medida que el proyecto vaya
+                            creciendo se iran agregando mas y mas centros comerciales, parques etc. Por lo que sera necesario
+                            agregar la siguiente informacion por cada lugar publico que se desea agregar:
+                        </p>
+                        <ul>
+                            <li>Nombre</li>
+                            <li>Descripcion</li>
+                            <li>Direccion</li>
+                            <li>Tipo</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="altas.html" class="btn btn-primary">Ir a Altas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Bajas</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="content">
+                            De acuerdo con lo mencionado en Altas, se permitira retrirar lugares publicos de nuestro sistema.
+                            Con ello, toda la informacion de nombre, descripcion, direccion y tipo seran eliminadas de nuestra base de datos.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/Lugares" class="btn btn-primary">Ir a Bajas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Consultas</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="content">
+                            El usuario podra consultar que lugares publicos estan afiliados a nuestro sistema.
+                            En este momento se esta trabajando en ofrecer este requerimiento de la misma manera que lo hace
+                            google maps. Hablo de mostrar un mapa digital que cubra toda la pantalla y desplegar un menu
+                            que contenga la informacion dada de alta del lugar seleccionado.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="/Lugares" class="btn btn-primary">Ir a Consultas</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h6>Modificaciones</h6>
+                    </div>
+                    <div class="card-body">
+                        <p class="content">
+                            El administrador general del sistema podra modificar la informacion de acuerdo a los cambios que surgan.
+                            Un ejemplo de esto es cuando uno busca una tienda dentro de un centro comercial y a la mera hora
+                            se da cuenta de que esa tienda ya no existe. Ha sido reemplazada por otro local.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="Lugares" class="btn btn-primary">Ir a Modificaciones</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand">CRUDE Gabow v0.0.1</a>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
